@@ -76,6 +76,7 @@ Obtener:
  - El edificio con el departamento con más ambientes (si hay varios con la misma cantidad basta con obtener uno de ellos)
  - Los edificios con más de 3 pisos
  - Todos los departamentos que son monoambientes.
+ - La cantidad total de departamentos
  - Las direcciones de los departamentos de más de un ambiente que se encuentran en edificios de menos de 3 pisos
  - Los edificios con departamentos que tengan cantidad de ambientes par, ordenados de mayor a menor según cantidad de pisos.
 
