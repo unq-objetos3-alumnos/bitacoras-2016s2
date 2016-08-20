@@ -26,4 +26,45 @@
 
  - Completar el formulario de grupos para TPs
  - Leer el paper de [Mixins](https://d8a0dde1-a-62cb3a1a-s-sites.googlegroups.com/site/programacionhm/conceptos/mixins/Paper%20-%20Bracha%2C%20Cook%20-%20Mixin-Based%20Inheritance.pdf?attachauth=ANoY7cqbcrZ3pmTTzR7PWq9dJQqoJERPbWgsN1HOkIl5vHo7Z8YFAS2khfzq3v-M8rHTsGGl9NT4LW87Z6evHTc_1g7oCfGw0SQG_VyjVZtyIC5utmPvI-c10Y_l2tTCfNxxkckw9OGDFJt9nARVAhUTfHSp9RulcrVxCfAncjES63FC6XTzuVtUp-DQXtKJac-fzFcpxaFApQmwFkGI2gAXF9JdZpSie6ov4LlGtDjEGcP-nkNzeHvAGo45sMNnJxncfTUK9ndQDLiSXIeWjlq-7FKr5sYK8mpfYlUKNQBI7oatfpkUHHA%3D&attredirects=0)
- 
+ - Opcional: los ejercicios que aparecen a continuación
+
+### Algunos ejercicios para repasar uso de colecciones:
+
+En [el sitio de la materia](https://sites.google.com/site/programacionhm/te/scala/introduccin-a-scala) van a encontrar los métodos vistos en clase.
+
+Dadas las clases:
+
+```scala
+class Casa(val direccion:String, val ambientes:Int)
+
+class Departamento(zonaYCalle:String, val piso:Int, val numero:Int, cantidadAmbientes:Int) extends 
+    Casa(s"$zonaYCalle, piso $piso, departamento $numero", cantidadAmbientes)
+
+class Edificio(val casas:Seq[Departamento])
+
+``` 
+
+Donde la cantidad de pisos de un edificio está dada por mayor número de piso entre sus departamentos.
+
+Y dadas las colecciones
+
+```scala
+
+val casas:Seq[Casa] = ???
+val edificios:Seq[Edificio] = ???
+
+```
+
+Obtener:
+
+ - La cantidad de casas con más de 2 ambientes
+ - Las casas con un ambiente
+ - La cantidad de edificios con más de 10 departamentos
+ - Todos los departamentos
+ - Las direcciones de todos los departamentos de un edificio
+ - El edificio con el departamento con más ambientes (si hay varios con la misma cantidad basta con obtener uno de ellos)
+ - Los edificios con más de 3 pisos
+ - Todos los departamentos que son monoambientes.
+ - Las direcciones de los departamentos de más de un ambiente que se encuentran en edificios de menos de 3 pisos
+ - Los edificios con departamentos que tengan cantidad de ambientes par, ordenados de mayor a menor según cantidad de pisos.
+
