@@ -35,12 +35,16 @@ En [el sitio de la materia](https://sites.google.com/site/programacionhm/te/scal
 Dadas las clases:
 
 ```scala
-class Casa(val direccion:String, val ambientes:Int)
+class Casa(val direccion:String, val ambientes:Int) {
+    override def toString = s"\n  ${this.getClass().getSimpleName}(direccion=$direccion, ambientes=$ambientes)"
+}
 
-class Departamento(zonaYCalle:String, val piso:Int, val numero:Int, cantidadAmbientes:Int) extends 
-    Casa(s"$zonaYCalle, piso $piso, departamento $numero", cantidadAmbientes)
+class Departamento(dir:String, val piso:Int, val numero:Int, cantidadAmbientes:Int) 
+extends Casa(s"$dir, piso $piso, departamento $numero", cantidadAmbientes) 
 
-class Edificio(val casas:Seq[Departamento])
+class Edificio(val departamentos:Seq[Departamento]) {
+    override def toString = s"\n  Edificio( departamentos=$departamentos )"
+}
 
 ``` 
 
@@ -49,9 +53,16 @@ Donde la cantidad de pisos de un edificio está dada por mayor número de piso e
 Y dadas las colecciones
 
 ```scala
+val casas = List(
+    new Casa("Calle falsa 1234", 5),
+    new Casa("Lalala 23", 2),
+    new Casa("Chiquita 44", 1),
+    new Casa("Mediana 98", 3)
+)
 
-val casas:Seq[Casa] = ???
-val edificios:Seq[Edificio] = ???
+val edificios = List( 
+    new Edificio(List( new Departamento(dir="Calle falsa 1111", piso=1, numero=1, cantidadAmbientes=3)))
+) // Completar con casos representativos 
 
 ```
 
