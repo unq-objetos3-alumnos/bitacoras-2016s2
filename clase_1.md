@@ -80,3 +80,19 @@ Obtener:
  - Las direcciones de los departamentos de más de un ambiente que se encuentran en edificios de menos de 3 pisos
  - Los edificios con departamentos que tengan cantidad de ambientes par, ordenados de mayor a menor según cantidad de pisos.
 
+------
+
+## Cómo usar los repositorios de cada grupo
+
+Cada grupo tiene asignado un repositorio con un proyecto ya creado. Los videos subidos cubren instalación de Intellij + plugin de scala, scalaTest, git y SBT: https://www.youtube.com/watch?v=yvoeJpxGLTU&list=PLTu6t0ymUxWpv40YiMXbfCE7e6oUeaqVa
+
+(veanlo en 1.25x o 1.5x , sino va muy lento).
+
+Los pasos del video serían:
+
+ - Tener instalado JDK 8 (esto lo tienen de Objetos 2 así que no voy a ahondar en eso, si tienen dudas pregunten por la lista)
+ - Descargar el [Intellij](https://www.jetbrains.com/idea/#chooseYourEdition) community edition
+ - Instalar el plugin de Scala: Abren el Intellij y en la pantalla de bienvenida: Configure -> PLugins -> Buscan Scala -> instalar
+ - Desde la pantalla de bienvenida: `Check out from Version Control` -> Git -> completan con su repo (ej: `https://github.com/unq-objetos3-alumnos/2016s2-grupo01-tp1.git`)
+ - Importan el proyecto como SBT. Tildar la opción de auto-import para que descargue dependencias automáticamente.
+ - Una vez que se terminen de descargar las dependencias pueden correr los tests dando botón derecho sobre `test/scala` en el navegador de archivos.
