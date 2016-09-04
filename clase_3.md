@@ -1,7 +1,7 @@
 
 # 02 / 09 / 2016
 
-## Stackabe Trait Pattern
+## Stackable Trait Pattern
 
 ### Qué vimos
 
