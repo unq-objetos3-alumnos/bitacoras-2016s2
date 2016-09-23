@@ -4,7 +4,8 @@ Bitácoras de las clases de Programación con Objetos 3, segundo semestre del 20
  - [Introducción a la materia, Scala, mixins](clase_1.md)
  - [Mixins](clase_2.md)
  - [Patrones de diseño con mixins](clase_3.md)
- - Soluciones integrando POO y programación funcional
+ - Día de correccipon de TPs
+ - [Soluciones integrando POO y programación funcional](clase_5.md)
  - Soluciones integrando POO y programación funcional
  - Intro metaprogramación, Ruby
  - Metaprogramación
